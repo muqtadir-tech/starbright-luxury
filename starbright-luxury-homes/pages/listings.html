@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listings — Starbright Real Estate &amp; Properties</title>
+    <meta name="description" content="Browse our collection of verified properties across Lagos and beyond.">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container-premium navbar-inner">
+            <a href="../index.html" class="navbar-logo">
+                <img src="../assets/images/starbright_logo.png" alt="Starbright Real Estate">
+            </a>
+            <div class="nav-links">
+                <a href="../index.html" class="nav-link">Home</a>
+                <a href="listings.html" class="nav-link active">Listings</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-cta">
+                <a href="tel:+2348000000000" class="nav-phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    +234 800 000 0000
+                </a>
+                <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer" class="premium-btn premium-btn-primary" style="font-size:12px;padding:0.625rem 1.25rem;">
+                    Get in Touch
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </a>
+            </div>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <a href="../index.html">Home</a>
+            <a href="listings.html" class="active">Listings</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <div class="mobile-cta">
+                <a href="https://wa.me/2348000000000" target="_blank" rel="noopener noreferrer" class="premium-btn premium-btn-primary" style="width:100%;font-size:12px;padding:0.75rem;">Get in Touch</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero" style="background-image: linear-gradient(120deg, hsla(220,25%,14%,0.8), hsla(0,60%,20%,0.55)), url('../assets/images/hero-3.jpg');">
+        <div class="container-premium">
+            <div class="breadcrumb">
+                <a href="../index.html">Home</a>
+                <span class="separator">/</span>
+                <span class="current">Listings</span>
+            </div>
+            <p class="page-hero-overline">Explore</p>
+            <h1>Property Listings</h1>
+            <p class="page-hero-desc">Browse our collection of verified properties.</p>
+        </div>
+    </div>
+
+    <!-- LISTINGS CONTENT -->
+    <div class="container-premium listings-page-content">
+        <!-- Search & Filter Bar -->
+        <div class="search-filter-bar">
+            <div class="search-input-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                <input type="text" placeholder="Search listings..." class="hero-search-input" style="padding-left:2.75rem;">
+            </div>
+            <button class="premium-btn premium-btn-outline" style="font-size:12px;padding:0.625rem 1.25rem;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="21" x2="14" y1="4" y2="4"/><line x1="10" x2="3" y1="4" y2="4"/><line x1="21" x2="12" y1="12" y2="12"/><line x1="8" x2="3" y1="12" y2="12"/><line x1="21" x2="16" y1="20" y2="20"/><line x1="12" x2="3" y1="20" y2="20"/><line x1="14" x2="14" y1="2" y2="6"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="16" x2="16" y1="18" y2="22"/></svg>
+                Filters
+            </button>
+        </div>
+
+        <!-- Filter Panel (static, shown) -->
+        <div class="premium-card filter-panel">
+            <div class="filter-grid">
+                <div>
+                    <label class="form-label">Location</label>
+                    <select class="hero-search-input">
+                        <option>All Locations</option>
+                        <option>Lekki Phase 1, Lagos</option>
+                        <option>Ikoyi, Lagos</option>
+                        <option>Victoria Island, Lagos</option>
+                        <option>Ajah, Lagos</option>
+                        <option>Epe, Lagos</option>
+                        <option>Banana Island, Lagos</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="form-label">Category</label>
+                    <select class="hero-search-input">
+                        <option>All Categories</option>
+                        <option>Land</option>
+                        <option>Houses</option>
+                        <option>Commercial</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="form-label">Sort By</label>
+                    <select class="hero-search-input">
+                        <option>Newest</option>
+                        <option>Price: Low to High</option>
+                        <option>Price: High to Low</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="form-label">Verified</label>
+                    <label class="hero-search-input" style="display:flex;align-items:center;gap:0.75rem;cursor:pointer;">
+                        <input type="checkbox">
+                        <span style="font-size:0.875rem;">Verified only</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <p class="results-count">6 properties found</p>
+
+        <!-- Listings Grid -->
+        <div class="listings-grid">
+            <!-- Card 1 -->
+            <a href="listing-luxury-4-bedroom-duplex-lekki.html" class="listing-card">
+                <div class="premium-card">
+                    <div class="listing-card-image">
+                        <img src="../assets/images/listing-1.jpg" alt="Luxury 4 Bedroom Duplex in Lekki Phase 1">
+                        <div class="listing-card-badges">
+                            <span class="verified-badge">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg>
+                                Verified
+                            </span>
+                        </div>
+                        <span class="listing-card-category-badge">house</span>
+                        <div class="listing-card-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                        </div>
+                    </div>
+                    <div class="listing-card-content">
+                        <h3 class="listing-card-title">Luxury 4 Bedroom Duplex in Lekki Phase 1</h3>
+                        <div class="listing-card-location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Lekki Phase 1, Lagos
+                        </div>
+                        <div class="listing-card-footer">
+                            <span class="listing-card-price premium-gradient-text">&#8358;185,000,000</span>
+                            <span class="listing-card-size">450 sqm</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="listing-premium-3-bedroom-apartment-ikoyi.html" class="listing-card">
+                <div class="premium-card">
+                    <div class="listing-card-image">
+                        <img src="../assets/images/listing-2.jpg" alt="Premium 3 Bedroom Apartment in Ikoyi">
+                        <div class="listing-card-badges">
+                            <span class="verified-badge">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg>
+                                Verified
+                            </span>
+                        </div>
+                        <span class="listing-card-category-badge">house</span>
+                        <div class="listing-card-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                        </div>
+                    </div>
+                    <div class="listing-card-content">
+                        <h3 class="listing-card-title">Premium 3 Bedroom Apartment in Ikoyi</h3>
+                        <div class="listing-card-location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Ikoyi, Lagos
+                        </div>
+                        <div class="listing-card-footer">
+                            <span class="listing-card-price premium-gradient-text">&#8358;120,000,000</span>
+                            <span class="listing-card-size">280 sqm</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 3 -->
+            <a href="listing-verified-plot-epe.html" class="listing-card">
+                <div class="premium-card">
+                    <div class="listing-card-image">
+                        <img src="../assets/images/listing-3.jpg" alt="Verified 1000sqm Plot in Epe">
+                        <div class="listing-card-badges">
+                            <span class="verified-badge">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg>
+                                Verified
+                            </span>
+                        </div>
+                        <span class="listing-card-category-badge">land</span>
+                        <div class="listing-card-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                        </div>
+                    </div>
+                    <div class="listing-card-content">
+                        <h3 class="listing-card-title">Verified 1000sqm Plot in Epe</h3>
+                        <div class="listing-card-location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Epe, Lagos
+                        </div>
+                        <div class="listing-card-footer">
+                            <span class="listing-card-price premium-gradient-text">&#8358;15,000,000</span>
+                            <span class="listing-card-size">1000 sqm</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 4 -->
+            <a href="listing-commercial-office-victoria-island.html" class="listing-card">
+                <div class="premium-card">
+                    <div class="listing-card-image">
+                        <img src="../assets/images/listing-4.jpg" alt="Prime Commercial Office Space — Victoria Island">
+                        <div class="listing-card-badges">
+                            <span class="verified-badge">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg>
+                                Verified
+                            </span>
+                        </div>
+                        <span class="listing-card-category-badge">commercial</span>
+                        <div class="listing-card-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                        </div>
+                    </div>
+                    <div class="listing-card-content">
+                        <h3 class="listing-card-title">Prime Commercial Office Space — Victoria Island</h3>
+                        <div class="listing-card-location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Victoria Island, Lagos
+                        </div>
+                        <div class="listing-card-footer">
+                            <span class="listing-card-price premium-gradient-text">&#8358;350,000,000</span>
+                            <span class="listing-card-size">1200 sqm</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 5 -->
+            <a href="listing-5-bedroom-mansion-banana-island.html" class="listing-card">
+                <div class="premium-card">
+                    <div class="listing-card-image">
+                        <img src="../assets/images/listing-5.jpg" alt="5 Bedroom Waterfront Mansion — Banana Island">
+                        <div class="listing-card-badges">
+                            <span class="verified-badge">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg>
+                                Verified
+                            </span>
+                        </div>
+                        <span class="listing-card-category-badge">house</span>
+                        <div class="listing-card-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                        </div>
+                    </div>
+                    <div class="listing-card-content">
+                        <h3 class="listing-card-title">5 Bedroom Waterfront Mansion — Banana Island</h3>
+                        <div class="listing-card-location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Banana Island, Lagos
+                        </div>
+                        <div class="listing-card-footer">
+                            <span class="listing-card-price premium-gradient-text">&#8358;950,000,000</span>
+                            <span class="listing-card-size">800 sqm</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 6 -->
+            <a href="listing-estate-land-ajah.html" class="listing-card">
+                <div class="premium-card">
+                    <div class="listing-card-image">
+                        <img src="../assets/images/listing-6.jpg" alt="Gated Estate Land in Ajah — 500sqm">
+                        <div class="listing-card-badges">
+                            <span class="verified-badge">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg>
+                                Verified
+                            </span>
+                        </div>
+                        <span class="listing-card-category-badge">land</span>
+                        <div class="listing-card-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+                        </div>
+                    </div>
+                    <div class="listing-card-content">
+                        <h3 class="listing-card-title">Gated Estate Land in Ajah — 500sqm</h3>
+                        <div class="listing-card-location">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            Ajah, Lagos
+                        </div>
+                        <div class="listing-card-footer">
+                            <span class="listing-card-price premium-gradient-text">&#8358;25,000,000</span>
+                            <span class="listing-card-size">500 sqm</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container-premium section-padding footer-inner">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="../assets/images/starbright_logo.png" alt="Starbright Real Estate">
+                    <p>Nigeria's trusted platform for verified land and property listings. We ensure every property is inspected and documented.</p>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="../index.html">Home</a>
+                        <a href="listings.html">Listings</a>
+                        <a href="about.html">About Us</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Categories</h4>
+                    <div class="footer-links">
+                        <a href="listings.html">Land</a>
+                        <a href="listings.html">Houses</a>
+                        <a href="listings.html">Commercial Properties</a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <div class="footer-contact">
+                        <a href="tel:+2348000000000">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <span>+234 800 000 0000</span>
+                        </a>
+                        <a href="mailto:hello@starbrightproperties.com">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            <span>hello@starbrightproperties.com</span>
+                        </a>
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Lagos, Nigeria</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Starbright Real Estate &amp; Properties. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="about.html">Privacy Policy</a>
+                    <a href="about.html">Terms of Service</a>
+                    <a href="https://muqtech.com" target="_blank" rel="noopener noreferrer" class="built-by">Built by <span>MuqTech</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
