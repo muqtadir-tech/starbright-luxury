@@ -626,7 +626,7 @@ textarea.hero-search-input {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 5.5rem;
+    padding-top: 4rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
     text-align: center;
@@ -635,7 +635,7 @@ textarea.hero-search-input {
 @media (min-width: 640px) {
     .hero-content {
         justify-content: center;
-        padding-top: 3rem;
+        padding-top: 1.5rem;
         padding-left: 2rem;
         padding-right: 2rem;
     }
@@ -643,7 +643,7 @@ textarea.hero-search-input {
 
 @media (min-width: 768px) {
     .hero-content {
-        padding-top: 3.5rem;
+        padding-top: 2rem;
     }
 }
 
