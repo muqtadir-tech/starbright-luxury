@@ -56,6 +56,7 @@ html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
 
 body {
@@ -65,6 +66,7 @@ body {
     font-feature-settings: "cv11", "ss01";
     text-rendering: optimizeLegibility;
     min-height: 100vh;
+    overflow-x: hidden;
     line-height: 1.6;
 }
 
@@ -2460,5 +2462,700 @@ input[type="checkbox"] {
         opacity: 1 !important;
         transform: none !important;
         transition: none !important;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE OVERRIDES
+   Organized by breakpoint, mobile-first
+   ========================================== */
+
+/* ------------------------------------------
+   Tablets and below (max-width: 1024px)
+   ------------------------------------------ */
+@media (max-width: 1024px) {
+    /* Navbar */
+    .nav-links,
+    .nav-cta {
+        display: none;
+    }
+
+    .mobile-toggle {
+        display: block;
+    }
+
+    .navbar-inner {
+        padding: 0 1rem;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 550px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-search-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Grids go to 2 columns max */
+    .trust-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Listing detail sidebar unsticks */
+    .detail-sidebar {
+        position: relative;
+        top: auto;
+    }
+
+    .detail-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Section padding */
+    .section-padding {
+        padding: 4rem 1.5rem;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.5rem;
+    }
+
+    /* About */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    /* CTA band */
+    .cta-band {
+        padding: 4rem 0;
+    }
+
+    .cta-band h2 {
+        font-size: 2rem;
+    }
+}
+
+/* ------------------------------------------
+   Mobile large (max-width: 768px)
+   ------------------------------------------ */
+@media (max-width: 768px) {
+    /* Typography */
+    .section-heading {
+        font-size: 1.75rem;
+    }
+
+    .section-desc {
+        font-size: 14px;
+    }
+
+    /* Navbar */
+    .navbar-inner {
+        height: 64px;
+        padding: 0 1rem;
+    }
+
+    .navbar-logo img {
+        height: 56px;
+    }
+
+    /* Mobile menu */
+    .mobile-menu {
+        padding: 1rem;
+    }
+
+    .mobile-menu a {
+        padding: 0.625rem 0.75rem;
+        font-size: 0.9375rem;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 100svh;
+    }
+
+    .hero-content {
+        padding-top: 5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .hero-title {
+        font-size: 1.875rem;
+        padding: 0;
+    }
+
+    .hero-subtitle {
+        font-size: 13px;
+        padding: 0 0.5rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .hero-badge {
+        font-size: 9px;
+        padding: 0.3rem 0.75rem;
+        margin-bottom: 0.625rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .hero-buttons .premium-btn {
+        width: 100%;
+        font-size: 12px;
+        padding: 0.75rem 1.5rem;
+    }
+
+    /* Hero search */
+    .hero-search {
+        margin-top: 1.25rem;
+        padding: 0 0.25rem;
+    }
+
+    .hero-search-bar {
+        padding: 0.625rem;
+    }
+
+    .hero-search-grid {
+        grid-template-columns: 1fr;
+        gap: 0.375rem;
+    }
+
+    .hero-search-grid .hero-search-input {
+        height: 2.25rem;
+        font-size: 12px;
+    }
+
+    /* Cards & grids stack to single column */
+    .listings-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .categories-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .trust-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    /* Section spacing */
+    .section-padding {
+        padding: 3rem 1rem;
+    }
+
+    .section-header {
+        margin-bottom: 2rem;
+    }
+
+    /* Listing cards */
+    .listing-card-content {
+        padding: 1rem;
+    }
+
+    .listing-card-title {
+        font-size: 14px;
+    }
+
+    .listing-card-price {
+        font-size: 1rem;
+    }
+
+    /* Category cards */
+    .category-card .premium-card {
+        padding: 1.75rem;
+    }
+
+    /* Trust cards */
+    .trust-card {
+        padding: 1.5rem;
+    }
+
+    /* Testimonial cards */
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+
+    /* CTA band */
+    .cta-band {
+        padding: 3rem 0;
+    }
+
+    .cta-band h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-band-desc {
+        font-size: 0.875rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .cta-band-buttons {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .cta-band-buttons .premium-btn {
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .footer-inner {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+        margin-top: 2rem;
+    }
+
+    .footer-bottom-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footer-bottom-links .built-by {
+        border-left: none;
+        padding-left: 0;
+    }
+
+    /* Page hero (sub-pages) */
+    .page-hero {
+        padding-top: 5.5rem;
+        padding-bottom: 2rem;
+    }
+
+    .page-hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .breadcrumb {
+        font-size: 0.75rem;
+        padding: 0.375rem 0.75rem;
+    }
+
+    /* Buttons */
+    .premium-btn {
+        padding: 0.625rem 1.25rem;
+        font-size: 12px;
+    }
+
+    /* Listing detail */
+    .listing-detail {
+        padding-top: 4.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .detail-title {
+        font-size: 1.25rem;
+    }
+
+    .detail-price {
+        font-size: 1.25rem;
+    }
+
+    .info-cards-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+    }
+
+    .detail-thumbnails {
+        gap: 0.5rem;
+    }
+
+    /* Contact form */
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    /* Search filters */
+    .search-filter-bar {
+        flex-direction: column;
+    }
+
+    .filter-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* About stats */
+    .stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.75rem;
+    }
+
+    .about-grid {
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    /* Related section */
+    .related-section {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .related-section h2 {
+        font-size: 1.25rem;
+    }
+
+    /* 404 page */
+    .not-found-content {
+        padding: 3rem 1rem;
+    }
+
+    .not-found-code {
+        font-size: 3rem;
+    }
+}
+
+/* ------------------------------------------
+   Small Mobile (max-width: 480px)
+   ------------------------------------------ */
+@media (max-width: 480px) {
+    /* Typography */
+    .section-heading {
+        font-size: 1.5rem;
+    }
+
+    /* Navbar */
+    .navbar-inner {
+        height: 56px;
+        padding: 0 0.75rem;
+    }
+
+    .navbar-logo img {
+        height: 48px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 100svh;
+    }
+
+    .hero-content {
+        padding-top: 4.5rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+        line-height: 1.25;
+    }
+
+    .hero-subtitle {
+        font-size: 12px;
+        line-height: 1.6;
+        padding: 0;
+    }
+
+    .hero-badge {
+        font-size: 8px;
+        letter-spacing: 0.15em;
+    }
+
+    .hero-buttons .premium-btn {
+        font-size: 11px;
+        padding: 0.625rem 1rem;
+    }
+
+    .hero-search {
+        padding: 0;
+    }
+
+    .hero-search-bar {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+
+    .hero-search-grid .hero-search-input {
+        height: 2rem;
+        font-size: 11px;
+        padding: 0.5rem 0.75rem;
+    }
+
+    /* Section spacing */
+    .section-padding {
+        padding: 2.5rem 0.75rem;
+    }
+
+    .section-header {
+        margin-bottom: 1.5rem;
+    }
+
+    /* Card content */
+    .listing-card-content {
+        padding: 0.875rem;
+    }
+
+    .listing-card-title {
+        font-size: 13px;
+    }
+
+    .listing-card-location {
+        font-size: 11px;
+    }
+
+    .listing-card-price {
+        font-size: 0.9375rem;
+    }
+
+    .listing-card-size {
+        font-size: 11px;
+    }
+
+    /* Category & trust cards */
+    .category-card .premium-card {
+        padding: 1.5rem;
+    }
+
+    .category-icon {
+        width: 3.25rem;
+        height: 3.25rem;
+    }
+
+    .trust-card {
+        padding: 1.25rem;
+    }
+
+    .trust-icon {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    /* Testimonials */
+    .testimonial-card {
+        padding: 1.25rem;
+    }
+
+    .testimonial-text {
+        font-size: 0.8125rem;
+    }
+
+    /* CTA band */
+    .cta-band {
+        padding: 2.5rem 0;
+    }
+
+    .cta-band h2 {
+        font-size: 1.25rem;
+    }
+
+    .cta-band-desc {
+        font-size: 0.8125rem;
+    }
+
+    .cta-btn-white,
+    .cta-btn-ghost-white {
+        padding: 0.75rem 1.5rem;
+        font-size: 12px;
+    }
+
+    /* Footer */
+    .footer-brand img {
+        height: 48px;
+    }
+
+    .footer h4 {
+        font-size: 11px;
+    }
+
+    .footer-links a {
+        font-size: 0.8125rem;
+    }
+
+    .footer-bottom p,
+    .footer-bottom-links a {
+        font-size: 11px;
+    }
+
+    /* Page hero (sub-pages) */
+    .page-hero {
+        padding-top: 5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .page-hero h1 {
+        font-size: 1.25rem;
+    }
+
+    .page-hero-desc {
+        font-size: 0.8125rem;
+    }
+
+    .breadcrumb {
+        font-size: 0.6875rem;
+    }
+
+    /* Listing detail */
+    .listing-detail {
+        padding-top: 4rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+    }
+
+    .detail-title {
+        font-size: 1.125rem;
+    }
+
+    .detail-price {
+        font-size: 1.125rem;
+    }
+
+    .info-cards-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .info-card {
+        padding: 0.75rem;
+    }
+
+    .info-card-label {
+        font-size: 9px;
+    }
+
+    .info-card-value {
+        font-size: 0.8125rem;
+    }
+
+    .detail-description h2,
+    .inspection-steps h2 {
+        font-size: 1rem;
+    }
+
+    .step-number {
+        width: 2rem;
+        height: 2rem;
+        font-size: 0.75rem;
+    }
+
+    /* Sidebar */
+    .sidebar-card {
+        padding: 1.25rem;
+    }
+
+    .sidebar-card h3 {
+        font-size: 1rem;
+    }
+
+    /* Contact page */
+    .contact-info-icon {
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+
+    /* About stats */
+    .stat-card {
+        padding: 1.25rem;
+    }
+
+    .stat-number {
+        font-size: 1.5rem;
+    }
+
+    .stat-label {
+        font-size: 11px;
+    }
+
+    /* 404 page */
+    .not-found-code {
+        font-size: 2.5rem;
+    }
+
+    .not-found-content > p {
+        font-size: 0.9375rem;
+    }
+}
+
+/* ------------------------------------------
+   Large Screens (min-width: 1200px)
+   ------------------------------------------ */
+@media (min-width: 1200px) {
+    .container-premium {
+        max-width: 1320px;
+    }
+
+    .section-padding {
+        padding: 7rem 4rem;
+    }
+
+    .hero-title {
+        font-size: 4.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .section-heading {
+        font-size: 3.25rem;
+    }
+
+    .listings-grid {
+        gap: 2rem;
+    }
+
+    .footer-grid {
+        gap: 5rem;
+    }
+
+    .cta-band {
+        padding: 7rem 0;
+    }
+
+    .cta-band h2 {
+        font-size: 3.25rem;
     }
 }
